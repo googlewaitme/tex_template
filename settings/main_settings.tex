@@ -1,0 +1,53 @@
+%Russian-specific packages
+%--------------------------------------
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+%--------------------------------------
+
+%font
+%--------------------------------------
+
+\usepackage{indentfirst}
+\usepackage{newtxmath}
+\usepackage{polyglossia}
+\usepackage{fontspec}
+
+\defaultfontfeatures{Ligatures = TeX, Mapping = tex-text}
+
+\setotherlanguage{english}
+\setmainfont{Times New Roman}
+
+\linespread{1.5}
+\setlength\parindent{12,5mm} % абзац
+
+
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt        % размер максимального переполнения без warning'a
+\widowpenalty=10000 % запрещает одиночную строку абзаца в начале страницы 
+\vfuzz \hfuzz
+\raggedbottom       % если на странице мало содержимого, добавить пустое место в конце, а не в середине страницы
+
+
+%--------------------------------------
+
+%Поля
+%--------------------------------------
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=2cm}% левое поле
+\geometry{right=1.5cm}% правое поле
+\geometry{top=1cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+%--------------------------------------
+
+
+%Graphic and math
+%--------------------------------------
+\usepackage{amsmath}
+\usepackage[dvips]{graphicx}
+\usepackage{float}%"Плавающие" картинки
+\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+\graphicspath{ {pictures/} }
+%--------------------------------------
